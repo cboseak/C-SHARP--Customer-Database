@@ -30,54 +30,76 @@
         {
             this.MainDisplay = new System.Windows.Forms.TabControl();
             this.customerInformationTab = new System.Windows.Forms.TabPage();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.toolStripProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
-            this.button1 = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.firstNameLabel = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.firstNameBox = new System.Windows.Forms.TextBox();
             this.phoneTextbox = new System.Windows.Forms.TextBox();
+            this.lastNameBox = new System.Windows.Forms.TextBox();
             this.emailTextbox = new System.Windows.Forms.TextBox();
+            this.address1Box = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.cityBox = new System.Windows.Forms.TextBox();
             this.phoneLabel = new System.Windows.Forms.Label();
+            this.zipCodeBox = new System.Windows.Forms.TextBox();
             this.emailLabel = new System.Windows.Forms.Label();
+            this.stateSelectBox = new System.Windows.Forms.ComboBox();
             this.stateZipLabel = new System.Windows.Forms.Label();
+            this.lastNameLabel = new System.Windows.Forms.Label();
             this.cityLabel = new System.Windows.Forms.Label();
             this.addressLabel = new System.Windows.Forms.Label();
-            this.lastNameLabel = new System.Windows.Forms.Label();
-            this.firstNameLabel = new System.Windows.Forms.Label();
-            this.stateSelectBox = new System.Windows.Forms.ComboBox();
-            this.zipCodeBox = new System.Windows.Forms.TextBox();
-            this.cityBox = new System.Windows.Forms.TextBox();
-            this.address1Box = new System.Windows.Forms.TextBox();
-            this.lastNameBox = new System.Windows.Forms.TextBox();
-            this.firstNameBox = new System.Windows.Forms.TextBox();
             this.lookupTab = new System.Windows.Forms.TabPage();
-            this.sqlResults = new System.Windows.Forms.DataGridView();
-            this.firstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lastname = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.address = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.city = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.state = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.zip = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.splitContainer2 = new System.Windows.Forms.SplitContainer();
+            this.splitContainer3 = new System.Windows.Forms.SplitContainer();
+            this.searchTerm = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.queryTab = new System.Windows.Forms.TabPage();
+            this.sqlQueryTabSplit = new System.Windows.Forms.SplitContainer();
+            this.sqlQueryTopPanelSplit = new System.Windows.Forms.SplitContainer();
+            this.sqlQueryTextbox = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.datagridForQuery = new System.Windows.Forms.DataGridView();
+            this.tabQueryBuilder = new System.Windows.Forms.TabPage();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.topText = new System.Windows.Forms.TextBox();
+            this.topLabel = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.searchTerm = new System.Windows.Forms.TextBox();
-            this.searchButton = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.MainDisplay.SuspendLayout();
             this.customerInformationTab.SuspendLayout();
-            this.statusStrip1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.lookupTab.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.sqlResults)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
-            this.splitContainer1.Panel1.SuspendLayout();
-            this.splitContainer1.Panel2.SuspendLayout();
-            this.splitContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
+            this.splitContainer2.Panel1.SuspendLayout();
+            this.splitContainer2.Panel2.SuspendLayout();
+            this.splitContainer2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).BeginInit();
+            this.splitContainer3.Panel1.SuspendLayout();
+            this.splitContainer3.Panel2.SuspendLayout();
+            this.splitContainer3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.queryTab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sqlQueryTabSplit)).BeginInit();
+            this.sqlQueryTabSplit.Panel1.SuspendLayout();
+            this.sqlQueryTabSplit.Panel2.SuspendLayout();
+            this.sqlQueryTabSplit.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sqlQueryTopPanelSplit)).BeginInit();
+            this.sqlQueryTopPanelSplit.Panel1.SuspendLayout();
+            this.sqlQueryTopPanelSplit.Panel2.SuspendLayout();
+            this.sqlQueryTopPanelSplit.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.datagridForQuery)).BeginInit();
+            this.tabQueryBuilder.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -85,151 +107,145 @@
             // 
             this.MainDisplay.Controls.Add(this.customerInformationTab);
             this.MainDisplay.Controls.Add(this.lookupTab);
+            this.MainDisplay.Controls.Add(this.queryTab);
+            this.MainDisplay.Controls.Add(this.tabQueryBuilder);
             this.MainDisplay.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MainDisplay.Location = new System.Drawing.Point(0, 0);
+            this.MainDisplay.Location = new System.Drawing.Point(0, 24);
             this.MainDisplay.Multiline = true;
             this.MainDisplay.Name = "MainDisplay";
             this.MainDisplay.SelectedIndex = 0;
-            this.MainDisplay.Size = new System.Drawing.Size(629, 496);
+            this.MainDisplay.Size = new System.Drawing.Size(719, 496);
             this.MainDisplay.TabIndex = 0;
             // 
             // customerInformationTab
             // 
             this.customerInformationTab.BackColor = System.Drawing.SystemColors.Control;
-            this.customerInformationTab.Controls.Add(this.statusStrip1);
-            this.customerInformationTab.Controls.Add(this.button1);
-            this.customerInformationTab.Controls.Add(this.phoneTextbox);
-            this.customerInformationTab.Controls.Add(this.emailTextbox);
-            this.customerInformationTab.Controls.Add(this.label1);
-            this.customerInformationTab.Controls.Add(this.phoneLabel);
-            this.customerInformationTab.Controls.Add(this.emailLabel);
-            this.customerInformationTab.Controls.Add(this.stateZipLabel);
-            this.customerInformationTab.Controls.Add(this.cityLabel);
-            this.customerInformationTab.Controls.Add(this.addressLabel);
-            this.customerInformationTab.Controls.Add(this.lastNameLabel);
-            this.customerInformationTab.Controls.Add(this.firstNameLabel);
-            this.customerInformationTab.Controls.Add(this.stateSelectBox);
-            this.customerInformationTab.Controls.Add(this.zipCodeBox);
-            this.customerInformationTab.Controls.Add(this.cityBox);
-            this.customerInformationTab.Controls.Add(this.address1Box);
-            this.customerInformationTab.Controls.Add(this.lastNameBox);
-            this.customerInformationTab.Controls.Add(this.firstNameBox);
+            this.customerInformationTab.Controls.Add(this.groupBox1);
             this.customerInformationTab.Location = new System.Drawing.Point(4, 22);
             this.customerInformationTab.Name = "customerInformationTab";
             this.customerInformationTab.Padding = new System.Windows.Forms.Padding(3);
-            this.customerInformationTab.Size = new System.Drawing.Size(621, 470);
+            this.customerInformationTab.Size = new System.Drawing.Size(711, 470);
             this.customerInformationTab.TabIndex = 0;
             this.customerInformationTab.Text = "Customer Information";
             // 
-            // statusStrip1
+            // groupBox1
             // 
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripProgressBar1});
-            this.statusStrip1.Location = new System.Drawing.Point(3, 445);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(615, 22);
-            this.statusStrip1.TabIndex = 18;
-            this.statusStrip1.Text = "statusStrip1";
+            this.groupBox1.Controls.Add(this.firstNameLabel);
+            this.groupBox1.Controls.Add(this.button2);
+            this.groupBox1.Controls.Add(this.firstNameBox);
+            this.groupBox1.Controls.Add(this.phoneTextbox);
+            this.groupBox1.Controls.Add(this.lastNameBox);
+            this.groupBox1.Controls.Add(this.emailTextbox);
+            this.groupBox1.Controls.Add(this.address1Box);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.cityBox);
+            this.groupBox1.Controls.Add(this.phoneLabel);
+            this.groupBox1.Controls.Add(this.zipCodeBox);
+            this.groupBox1.Controls.Add(this.emailLabel);
+            this.groupBox1.Controls.Add(this.stateSelectBox);
+            this.groupBox1.Controls.Add(this.stateZipLabel);
+            this.groupBox1.Controls.Add(this.lastNameLabel);
+            this.groupBox1.Controls.Add(this.cityLabel);
+            this.groupBox1.Controls.Add(this.addressLabel);
+            this.groupBox1.Location = new System.Drawing.Point(3, 0);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(297, 281);
+            this.groupBox1.TabIndex = 18;
+            this.groupBox1.TabStop = false;
             // 
-            // toolStripProgressBar1
+            // firstNameLabel
             // 
-            this.toolStripProgressBar1.Name = "toolStripProgressBar1";
-            this.toolStripProgressBar1.Size = new System.Drawing.Size(100, 16);
+            this.firstNameLabel.AutoSize = true;
+            this.firstNameLabel.Location = new System.Drawing.Point(6, 35);
+            this.firstNameLabel.Name = "firstNameLabel";
+            this.firstNameLabel.Size = new System.Drawing.Size(57, 13);
+            this.firstNameLabel.TabIndex = 6;
+            this.firstNameLabel.Text = "First Name";
             // 
-            // button1
+            // button2
             // 
-            this.button1.Location = new System.Drawing.Point(413, 116);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button2.Location = new System.Drawing.Point(9, 232);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(275, 33);
+            this.button2.TabIndex = 17;
+            this.button2.Text = "Submit";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
+            // firstNameBox
+            // 
+            this.firstNameBox.Location = new System.Drawing.Point(69, 32);
+            this.firstNameBox.Name = "firstNameBox";
+            this.firstNameBox.Size = new System.Drawing.Size(215, 20);
+            this.firstNameBox.TabIndex = 0;
             // 
             // phoneTextbox
             // 
-            this.phoneTextbox.Location = new System.Drawing.Point(71, 184);
+            this.phoneTextbox.Location = new System.Drawing.Point(69, 206);
             this.phoneTextbox.Name = "phoneTextbox";
             this.phoneTextbox.Size = new System.Drawing.Size(215, 20);
             this.phoneTextbox.TabIndex = 16;
             // 
+            // lastNameBox
+            // 
+            this.lastNameBox.Location = new System.Drawing.Point(69, 58);
+            this.lastNameBox.Name = "lastNameBox";
+            this.lastNameBox.Size = new System.Drawing.Size(215, 20);
+            this.lastNameBox.TabIndex = 1;
+            // 
             // emailTextbox
             // 
-            this.emailTextbox.Location = new System.Drawing.Point(71, 159);
+            this.emailTextbox.Location = new System.Drawing.Point(69, 181);
             this.emailTextbox.Name = "emailTextbox";
             this.emailTextbox.Size = new System.Drawing.Size(215, 20);
             this.emailTextbox.TabIndex = 15;
             // 
+            // address1Box
+            // 
+            this.address1Box.Location = new System.Drawing.Point(69, 84);
+            this.address1Box.Name = "address1Box";
+            this.address1Box.Size = new System.Drawing.Size(215, 20);
+            this.address1Box.TabIndex = 2;
+            // 
             // label1
             // 
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.Location = new System.Drawing.Point(11, 147);
+            this.label1.Location = new System.Drawing.Point(9, 169);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(275, 2);
             this.label1.TabIndex = 14;
             // 
+            // cityBox
+            // 
+            this.cityBox.Location = new System.Drawing.Point(69, 109);
+            this.cityBox.Name = "cityBox";
+            this.cityBox.Size = new System.Drawing.Size(215, 20);
+            this.cityBox.TabIndex = 3;
+            // 
             // phoneLabel
             // 
             this.phoneLabel.AutoSize = true;
-            this.phoneLabel.Location = new System.Drawing.Point(8, 188);
+            this.phoneLabel.Location = new System.Drawing.Point(6, 210);
             this.phoneLabel.Name = "phoneLabel";
             this.phoneLabel.Size = new System.Drawing.Size(38, 13);
             this.phoneLabel.TabIndex = 13;
             this.phoneLabel.Text = "Phone";
             // 
+            // zipCodeBox
+            // 
+            this.zipCodeBox.Location = new System.Drawing.Point(196, 135);
+            this.zipCodeBox.Name = "zipCodeBox";
+            this.zipCodeBox.Size = new System.Drawing.Size(88, 20);
+            this.zipCodeBox.TabIndex = 5;
+            // 
             // emailLabel
             // 
             this.emailLabel.AutoSize = true;
-            this.emailLabel.Location = new System.Drawing.Point(8, 162);
+            this.emailLabel.Location = new System.Drawing.Point(6, 184);
             this.emailLabel.Name = "emailLabel";
             this.emailLabel.Size = new System.Drawing.Size(32, 13);
             this.emailLabel.TabIndex = 12;
             this.emailLabel.Text = "Email";
-            // 
-            // stateZipLabel
-            // 
-            this.stateZipLabel.AutoSize = true;
-            this.stateZipLabel.Location = new System.Drawing.Point(8, 116);
-            this.stateZipLabel.Name = "stateZipLabel";
-            this.stateZipLabel.Size = new System.Drawing.Size(58, 13);
-            this.stateZipLabel.TabIndex = 10;
-            this.stateZipLabel.Text = "State / Zip";
-            // 
-            // cityLabel
-            // 
-            this.cityLabel.AutoSize = true;
-            this.cityLabel.Location = new System.Drawing.Point(8, 90);
-            this.cityLabel.Name = "cityLabel";
-            this.cityLabel.Size = new System.Drawing.Size(24, 13);
-            this.cityLabel.TabIndex = 9;
-            this.cityLabel.Text = "City";
-            // 
-            // addressLabel
-            // 
-            this.addressLabel.AutoSize = true;
-            this.addressLabel.Location = new System.Drawing.Point(8, 65);
-            this.addressLabel.Name = "addressLabel";
-            this.addressLabel.Size = new System.Drawing.Size(45, 13);
-            this.addressLabel.TabIndex = 8;
-            this.addressLabel.Text = "Address";
-            // 
-            // lastNameLabel
-            // 
-            this.lastNameLabel.AutoSize = true;
-            this.lastNameLabel.Location = new System.Drawing.Point(8, 39);
-            this.lastNameLabel.Name = "lastNameLabel";
-            this.lastNameLabel.Size = new System.Drawing.Size(58, 13);
-            this.lastNameLabel.TabIndex = 7;
-            this.lastNameLabel.Text = "Last Name";
-            // 
-            // firstNameLabel
-            // 
-            this.firstNameLabel.AutoSize = true;
-            this.firstNameLabel.Location = new System.Drawing.Point(8, 13);
-            this.firstNameLabel.Name = "firstNameLabel";
-            this.firstNameLabel.Size = new System.Drawing.Size(57, 13);
-            this.firstNameLabel.TabIndex = 6;
-            this.firstNameLabel.Text = "First Name";
             // 
             // stateSelectBox
             // 
@@ -284,153 +300,296 @@
             "West Virginia ",
             "Wisconsin ",
             "Wyoming"});
-            this.stateSelectBox.Location = new System.Drawing.Point(71, 112);
+            this.stateSelectBox.Location = new System.Drawing.Point(69, 134);
             this.stateSelectBox.Name = "stateSelectBox";
             this.stateSelectBox.Size = new System.Drawing.Size(121, 21);
             this.stateSelectBox.Sorted = true;
-            this.stateSelectBox.TabIndex = 5;
+            this.stateSelectBox.TabIndex = 4;
             // 
-            // zipCodeBox
+            // stateZipLabel
             // 
-            this.zipCodeBox.Location = new System.Drawing.Point(198, 113);
-            this.zipCodeBox.Name = "zipCodeBox";
-            this.zipCodeBox.Size = new System.Drawing.Size(88, 20);
-            this.zipCodeBox.TabIndex = 4;
+            this.stateZipLabel.AutoSize = true;
+            this.stateZipLabel.Location = new System.Drawing.Point(6, 138);
+            this.stateZipLabel.Name = "stateZipLabel";
+            this.stateZipLabel.Size = new System.Drawing.Size(58, 13);
+            this.stateZipLabel.TabIndex = 10;
+            this.stateZipLabel.Text = "State / Zip";
             // 
-            // cityBox
+            // lastNameLabel
             // 
-            this.cityBox.Location = new System.Drawing.Point(71, 87);
-            this.cityBox.Name = "cityBox";
-            this.cityBox.Size = new System.Drawing.Size(215, 20);
-            this.cityBox.TabIndex = 3;
+            this.lastNameLabel.AutoSize = true;
+            this.lastNameLabel.Location = new System.Drawing.Point(6, 61);
+            this.lastNameLabel.Name = "lastNameLabel";
+            this.lastNameLabel.Size = new System.Drawing.Size(58, 13);
+            this.lastNameLabel.TabIndex = 7;
+            this.lastNameLabel.Text = "Last Name";
             // 
-            // address1Box
+            // cityLabel
             // 
-            this.address1Box.Location = new System.Drawing.Point(71, 62);
-            this.address1Box.Name = "address1Box";
-            this.address1Box.Size = new System.Drawing.Size(215, 20);
-            this.address1Box.TabIndex = 2;
+            this.cityLabel.AutoSize = true;
+            this.cityLabel.Location = new System.Drawing.Point(6, 112);
+            this.cityLabel.Name = "cityLabel";
+            this.cityLabel.Size = new System.Drawing.Size(24, 13);
+            this.cityLabel.TabIndex = 9;
+            this.cityLabel.Text = "City";
             // 
-            // lastNameBox
+            // addressLabel
             // 
-            this.lastNameBox.Location = new System.Drawing.Point(71, 36);
-            this.lastNameBox.Name = "lastNameBox";
-            this.lastNameBox.Size = new System.Drawing.Size(215, 20);
-            this.lastNameBox.TabIndex = 1;
-            // 
-            // firstNameBox
-            // 
-            this.firstNameBox.Location = new System.Drawing.Point(71, 10);
-            this.firstNameBox.Name = "firstNameBox";
-            this.firstNameBox.Size = new System.Drawing.Size(215, 20);
-            this.firstNameBox.TabIndex = 0;
+            this.addressLabel.AutoSize = true;
+            this.addressLabel.Location = new System.Drawing.Point(6, 87);
+            this.addressLabel.Name = "addressLabel";
+            this.addressLabel.Size = new System.Drawing.Size(45, 13);
+            this.addressLabel.TabIndex = 8;
+            this.addressLabel.Text = "Address";
             // 
             // lookupTab
             // 
             this.lookupTab.BackColor = System.Drawing.SystemColors.Control;
-            this.lookupTab.Controls.Add(this.sqlResults);
+            this.lookupTab.Controls.Add(this.splitContainer2);
             this.lookupTab.Location = new System.Drawing.Point(4, 22);
             this.lookupTab.Name = "lookupTab";
             this.lookupTab.Padding = new System.Windows.Forms.Padding(3);
-            this.lookupTab.Size = new System.Drawing.Size(621, 470);
+            this.lookupTab.Size = new System.Drawing.Size(711, 470);
             this.lookupTab.TabIndex = 1;
             this.lookupTab.Text = "Customer Lookup";
             // 
-            // sqlResults
+            // splitContainer2
             // 
-            this.sqlResults.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.sqlResults.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.firstName,
-            this.lastname,
-            this.address,
-            this.city,
-            this.state,
-            this.zip,
-            this.email,
-            this.phone});
-            this.sqlResults.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.sqlResults.Location = new System.Drawing.Point(3, 3);
-            this.sqlResults.Name = "sqlResults";
-            this.sqlResults.Size = new System.Drawing.Size(615, 464);
-            this.sqlResults.TabIndex = 3;
+            this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer2.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
+            this.splitContainer2.IsSplitterFixed = true;
+            this.splitContainer2.Location = new System.Drawing.Point(3, 3);
+            this.splitContainer2.Name = "splitContainer2";
+            this.splitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
-            // firstName
+            // splitContainer2.Panel1
             // 
-            this.firstName.HeaderText = "First Name";
-            this.firstName.Name = "firstName";
-            this.firstName.ReadOnly = true;
+            this.splitContainer2.Panel1.Controls.Add(this.splitContainer3);
             // 
-            // lastname
+            // splitContainer2.Panel2
             // 
-            this.lastname.HeaderText = "lastName";
-            this.lastname.Name = "lastname";
-            this.lastname.ReadOnly = true;
+            this.splitContainer2.Panel2.Controls.Add(this.dataGridView1);
+            this.splitContainer2.Size = new System.Drawing.Size(705, 464);
+            this.splitContainer2.SplitterDistance = 25;
+            this.splitContainer2.TabIndex = 1;
             // 
-            // address
+            // splitContainer3
             // 
-            this.address.HeaderText = "Address";
-            this.address.Name = "address";
-            this.address.ReadOnly = true;
+            this.splitContainer3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer3.FixedPanel = System.Windows.Forms.FixedPanel.Panel2;
+            this.splitContainer3.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer3.Name = "splitContainer3";
             // 
-            // city
+            // splitContainer3.Panel1
             // 
-            this.city.HeaderText = "City";
-            this.city.Name = "city";
-            this.city.ReadOnly = true;
+            this.splitContainer3.Panel1.Controls.Add(this.searchTerm);
             // 
-            // state
+            // splitContainer3.Panel2
             // 
-            this.state.HeaderText = "State";
-            this.state.Name = "state";
-            this.state.ReadOnly = true;
+            this.splitContainer3.Panel2.Controls.Add(this.button1);
+            this.splitContainer3.Size = new System.Drawing.Size(705, 25);
+            this.splitContainer3.SplitterDistance = 622;
+            this.splitContainer3.TabIndex = 0;
             // 
-            // zip
+            // searchTerm
             // 
-            this.zip.HeaderText = "Zip";
-            this.zip.Name = "zip";
-            this.zip.ReadOnly = true;
+            this.searchTerm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.searchTerm.Location = new System.Drawing.Point(0, 0);
+            this.searchTerm.Multiline = true;
+            this.searchTerm.Name = "searchTerm";
+            this.searchTerm.Size = new System.Drawing.Size(622, 25);
+            this.searchTerm.TabIndex = 20;
             // 
-            // email
+            // button1
             // 
-            this.email.HeaderText = "Email";
-            this.email.Name = "email";
-            this.email.ReadOnly = true;
+            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button1.Location = new System.Drawing.Point(0, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(79, 25);
+            this.button1.TabIndex = 21;
+            this.button1.Text = "Search";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // phone
+            // dataGridView1
             // 
-            this.phone.HeaderText = "Phone Number";
-            this.phone.Name = "phone";
-            this.phone.ReadOnly = true;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(705, 435);
+            this.dataGridView1.TabIndex = 0;
             // 
-            // splitContainer1
+            // queryTab
             // 
-            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
-            this.splitContainer1.IsSplitterFixed = true;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 24);
-            this.splitContainer1.Name = "splitContainer1";
+            this.queryTab.Controls.Add(this.sqlQueryTabSplit);
+            this.queryTab.Location = new System.Drawing.Point(4, 22);
+            this.queryTab.Name = "queryTab";
+            this.queryTab.Padding = new System.Windows.Forms.Padding(3);
+            this.queryTab.Size = new System.Drawing.Size(711, 470);
+            this.queryTab.TabIndex = 2;
+            this.queryTab.Text = "SQL Query";
+            this.queryTab.UseVisualStyleBackColor = true;
             // 
-            // splitContainer1.Panel1
+            // sqlQueryTabSplit
             // 
-            this.splitContainer1.Panel1.BackColor = System.Drawing.Color.White;
-            this.splitContainer1.Panel1.Controls.Add(this.pictureBox1);
+            this.sqlQueryTabSplit.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.sqlQueryTabSplit.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
+            this.sqlQueryTabSplit.Location = new System.Drawing.Point(3, 3);
+            this.sqlQueryTabSplit.Name = "sqlQueryTabSplit";
+            this.sqlQueryTabSplit.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
-            // splitContainer1.Panel2
+            // sqlQueryTabSplit.Panel1
             // 
-            this.splitContainer1.Panel2.Controls.Add(this.MainDisplay);
-            this.splitContainer1.Size = new System.Drawing.Size(719, 496);
-            this.splitContainer1.SplitterDistance = 86;
-            this.splitContainer1.TabIndex = 18;
+            this.sqlQueryTabSplit.Panel1.Controls.Add(this.sqlQueryTopPanelSplit);
             // 
-            // pictureBox1
+            // sqlQueryTabSplit.Panel2
             // 
-            this.pictureBox1.Image = global::Customer_Database.Properties.Resources._7002_grey_gradient_1280x800_abstract_wallpaper;
-            this.pictureBox1.Location = new System.Drawing.Point(-8, -13);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(118, 1500);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.sqlQueryTabSplit.Panel2.Controls.Add(this.datagridForQuery);
+            this.sqlQueryTabSplit.Size = new System.Drawing.Size(705, 464);
+            this.sqlQueryTabSplit.SplitterDistance = 48;
+            this.sqlQueryTabSplit.TabIndex = 0;
+            // 
+            // sqlQueryTopPanelSplit
+            // 
+            this.sqlQueryTopPanelSplit.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.sqlQueryTopPanelSplit.FixedPanel = System.Windows.Forms.FixedPanel.Panel2;
+            this.sqlQueryTopPanelSplit.Location = new System.Drawing.Point(0, 0);
+            this.sqlQueryTopPanelSplit.Name = "sqlQueryTopPanelSplit";
+            // 
+            // sqlQueryTopPanelSplit.Panel1
+            // 
+            this.sqlQueryTopPanelSplit.Panel1.Controls.Add(this.sqlQueryTextbox);
+            // 
+            // sqlQueryTopPanelSplit.Panel2
+            // 
+            this.sqlQueryTopPanelSplit.Panel2.Controls.Add(this.button3);
+            this.sqlQueryTopPanelSplit.Size = new System.Drawing.Size(705, 48);
+            this.sqlQueryTopPanelSplit.SplitterDistance = 597;
+            this.sqlQueryTopPanelSplit.TabIndex = 0;
+            // 
+            // sqlQueryTextbox
+            // 
+            this.sqlQueryTextbox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.sqlQueryTextbox.Location = new System.Drawing.Point(0, 0);
+            this.sqlQueryTextbox.Multiline = true;
+            this.sqlQueryTextbox.Name = "sqlQueryTextbox";
+            this.sqlQueryTextbox.Size = new System.Drawing.Size(597, 48);
+            this.sqlQueryTextbox.TabIndex = 0;
+            // 
+            // button3
+            // 
+            this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button3.Location = new System.Drawing.Point(0, 0);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(104, 48);
+            this.button3.TabIndex = 0;
+            this.button3.Text = "Run Query";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // datagridForQuery
+            // 
+            this.datagridForQuery.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.datagridForQuery.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.datagridForQuery.Location = new System.Drawing.Point(0, 0);
+            this.datagridForQuery.Name = "datagridForQuery";
+            this.datagridForQuery.Size = new System.Drawing.Size(705, 412);
+            this.datagridForQuery.TabIndex = 0;
+            // 
+            // tabQueryBuilder
+            // 
+            this.tabQueryBuilder.BackColor = System.Drawing.SystemColors.Control;
+            this.tabQueryBuilder.Controls.Add(this.comboBox4);
+            this.tabQueryBuilder.Controls.Add(this.label4);
+            this.tabQueryBuilder.Controls.Add(this.textBox1);
+            this.tabQueryBuilder.Controls.Add(this.comboBox3);
+            this.tabQueryBuilder.Controls.Add(this.comboBox2);
+            this.tabQueryBuilder.Controls.Add(this.topText);
+            this.tabQueryBuilder.Controls.Add(this.topLabel);
+            this.tabQueryBuilder.Controls.Add(this.label3);
+            this.tabQueryBuilder.Controls.Add(this.comboBox1);
+            this.tabQueryBuilder.Controls.Add(this.label2);
+            this.tabQueryBuilder.Location = new System.Drawing.Point(4, 22);
+            this.tabQueryBuilder.Name = "tabQueryBuilder";
+            this.tabQueryBuilder.Padding = new System.Windows.Forms.Padding(3);
+            this.tabQueryBuilder.Size = new System.Drawing.Size(711, 470);
+            this.tabQueryBuilder.TabIndex = 3;
+            this.tabQueryBuilder.Text = "Query Builder";
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "is",
+            "is not",
+            "contains",
+            "does not contain",
+            "equals",
+            "does not equal"});
+            this.comboBox3.Location = new System.Drawing.Point(203, 38);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(121, 21);
+            this.comboBox3.TabIndex = 7;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "TBD - Will pull column list from database"});
+            this.comboBox2.Location = new System.Drawing.Point(76, 38);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 21);
+            this.comboBox2.TabIndex = 6;
+            // 
+            // topText
+            // 
+            this.topText.Location = new System.Drawing.Point(310, 8);
+            this.topText.Name = "topText";
+            this.topText.Size = new System.Drawing.Size(100, 20);
+            this.topText.TabIndex = 5;
+            // 
+            // topLabel
+            // 
+            this.topLabel.AutoSize = true;
+            this.topLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.topLabel.Location = new System.Drawing.Point(264, 9);
+            this.topLabel.Name = "topLabel";
+            this.topLabel.Size = new System.Drawing.Size(40, 20);
+            this.topLabel.TabIndex = 4;
+            this.topLabel.Text = "TOP";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(6, 39);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(70, 20);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "WHERE";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "All",
+            "Top ____ Items"});
+            this.comboBox1.Location = new System.Drawing.Point(76, 8);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 1;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(6, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(71, 20);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "SELECT";
             // 
             // menuStrip1
             // 
@@ -469,47 +628,71 @@
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
             this.aboutToolStripMenuItem.Text = "About";
             // 
-            // searchTerm
+            // textBox1
             // 
-            this.searchTerm.Location = new System.Drawing.Point(427, 3);
-            this.searchTerm.Name = "searchTerm";
-            this.searchTerm.Size = new System.Drawing.Size(211, 20);
-            this.searchTerm.TabIndex = 20;
+            this.textBox1.Location = new System.Drawing.Point(330, 39);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 8;
             // 
-            // searchButton
+            // label4
             // 
-            this.searchButton.Location = new System.Drawing.Point(644, 1);
-            this.searchButton.Name = "searchButton";
-            this.searchButton.Size = new System.Drawing.Size(75, 23);
-            this.searchButton.TabIndex = 22;
-            this.searchButton.Text = "Search";
-            this.searchButton.UseVisualStyleBackColor = true;
-            this.searchButton.Click += new System.EventHandler(this.button2_Click);
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(6, 72);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(56, 20);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "FROM";
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Items.AddRange(new object[] {
+            "TBD - Will pull table list from database"});
+            this.comboBox4.Location = new System.Drawing.Point(76, 71);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(121, 21);
+            this.comboBox4.TabIndex = 10;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(719, 520);
-            this.Controls.Add(this.searchButton);
-            this.Controls.Add(this.searchTerm);
-            this.Controls.Add(this.splitContainer1);
+            this.Controls.Add(this.MainDisplay);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
             this.MainDisplay.ResumeLayout(false);
             this.customerInformationTab.ResumeLayout(false);
-            this.customerInformationTab.PerformLayout();
-            this.statusStrip1.ResumeLayout(false);
-            this.statusStrip1.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.lookupTab.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.sqlResults)).EndInit();
-            this.splitContainer1.Panel1.ResumeLayout(false);
-            this.splitContainer1.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
-            this.splitContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.splitContainer2.Panel1.ResumeLayout(false);
+            this.splitContainer2.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
+            this.splitContainer2.ResumeLayout(false);
+            this.splitContainer3.Panel1.ResumeLayout(false);
+            this.splitContainer3.Panel1.PerformLayout();
+            this.splitContainer3.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).EndInit();
+            this.splitContainer3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.queryTab.ResumeLayout(false);
+            this.sqlQueryTabSplit.Panel1.ResumeLayout(false);
+            this.sqlQueryTabSplit.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.sqlQueryTabSplit)).EndInit();
+            this.sqlQueryTabSplit.ResumeLayout(false);
+            this.sqlQueryTopPanelSplit.Panel1.ResumeLayout(false);
+            this.sqlQueryTopPanelSplit.Panel1.PerformLayout();
+            this.sqlQueryTopPanelSplit.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.sqlQueryTopPanelSplit)).EndInit();
+            this.sqlQueryTopPanelSplit.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.datagridForQuery)).EndInit();
+            this.tabQueryBuilder.ResumeLayout(false);
+            this.tabQueryBuilder.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -538,27 +721,35 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label phoneLabel;
         private System.Windows.Forms.Label emailLabel;
-        private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.StatusStrip statusStrip1;
-        private System.Windows.Forms.ToolStripProgressBar toolStripProgressBar1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
-        private System.Windows.Forms.DataGridView sqlResults;
-        private System.Windows.Forms.DataGridViewTextBoxColumn firstName;
         private System.Windows.Forms.TextBox searchTerm;
-        private System.Windows.Forms.DataGridViewTextBoxColumn lastname;
-        private System.Windows.Forms.DataGridViewTextBoxColumn address;
-        private System.Windows.Forms.DataGridViewTextBoxColumn city;
-        private System.Windows.Forms.DataGridViewTextBoxColumn state;
-        private System.Windows.Forms.DataGridViewTextBoxColumn zip;
-        private System.Windows.Forms.DataGridViewTextBoxColumn email;
-        private System.Windows.Forms.DataGridViewTextBoxColumn phone;
-        private System.Windows.Forms.Button searchButton;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TabPage queryTab;
+        private System.Windows.Forms.SplitContainer sqlQueryTabSplit;
+        private System.Windows.Forms.DataGridView datagridForQuery;
+        private System.Windows.Forms.SplitContainer sqlQueryTopPanelSplit;
+        private System.Windows.Forms.TextBox sqlQueryTextbox;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.SplitContainer splitContainer2;
+        private System.Windows.Forms.SplitContainer splitContainer3;
+        private System.Windows.Forms.TabPage tabQueryBuilder;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox topText;
+        private System.Windows.Forms.Label topLabel;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 

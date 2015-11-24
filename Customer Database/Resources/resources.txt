@@ -1,0 +1,1 @@
+workstation id=cbtestdb.mssql.somee.com;packet size=4096;user id=cboseak_SQLLogin_1;pwd=nfgv76epfv;data source=cbtestdb.mssql.somee.com;persist security info=False;initial catalog=cbtestdb

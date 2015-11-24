@@ -10,3 +10,11 @@ C:\Users\Owner\Google Drive\Customer Database\Customer Database\obj\Debug\Custom
 C:\Users\TWoffice\Google Drive\Customer Database\Customer Database\bin\Debug\Customer Database.exe.config
 C:\Users\TWoffice\Google Drive\Customer Database\Customer Database\obj\Debug\Customer Database.exe
 C:\Users\TWoffice\Google Drive\Customer Database\Customer Database\obj\Debug\Customer Database.pdb
+C:\Users\Owner\Google Drive\Customer Database\Customer Database\obj\Debug\Customer Database.exe.licenses
+C:\Users\TWoffice\Google Drive\Customer Database\Customer Database\obj\Debug\Customer Database.csprojResolveAssemblyReference.cache
+C:\Users\TWoffice\Google Drive\Customer Database\Customer Database\obj\Debug\Customer_Database.Form1.resources
+C:\Users\TWoffice\Google Drive\Customer Database\Customer Database\obj\Debug\Customer_Database.Properties.Resources.resources
+C:\Users\TWoffice\Google Drive\Customer Database\Customer Database\obj\Debug\Customer Database.csproj.GenerateResource.Cache
+C:\Users\TWoffice\Google Drive\Customer Database\Customer Database\obj\Debug\Customer Database.exe.licenses
+C:\Users\TWoffice\Google Drive\Customer Database\Customer Database\bin\Debug\Customer Database.exe
+C:\Users\TWoffice\Google Drive\Customer Database\Customer Database\bin\Debug\Customer Database.pdb

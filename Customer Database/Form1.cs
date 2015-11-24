@@ -4,7 +4,9 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -15,25 +17,41 @@ namespace Customer_Database
     public partial class Form1 : Form
     {
 
+        private DataTable searchDataTable = new DataTable();
+        private DataTable queryDataTable = new DataTable();
+
         public Form1()
         {
             InitializeComponent();
+            this.dataGridView1.DataSource = searchDataTable;
+            this.datagridForQuery.DataSource = queryDataTable;
+            this.topLabel.Hide();
+            this.topText.Hide();
         }
-        string connectionString = "workstation id=cbtestdb.mssql.somee.com;packet size=4096;user id=cboseak_SQLLogin_1;pwd=nfgv76epfv;data source=cbtestdb.mssql.somee.com;persist security info=False;initial catalog=cbtestdb";
-        List<Customer> tempCustList = new List<Customer>();
 
-        class Customer
+        private static string loadCn()
         {
-            String firstName { get; set; }
-            String lastName { get; set; }
-            String address { get; set; }
-            String city { get; set; }
-            String state { get; set; }
-            String zip { get; set; }
-            String email { get; set; }
-            String phone { get; set; }
+            var cn = "";
+            StreamReader sr = new StreamReader(@"..\..\Resources\resources.txt");
+            cn = sr.ReadLine();
+            return cn;
+        }
 
-            public Customer(String fn, String ln, String add, String cityIn, String stateIn, String zipIn, String emailIn, String phoneIn)
+        private readonly string connectionString = loadCn();
+
+        private class Customer
+        {
+            private String firstName { get; set; }
+            private String lastName { get; set; }
+            private String address { get; set; }
+            private String city { get; set; }
+            private String state { get; set; }
+            private String zip { get; set; }
+            private String email { get; set; }
+            private String phone { get; set; }
+
+            public Customer(String fn, String ln, String add, String cityIn, String stateIn, String zipIn,
+                String emailIn, String phoneIn)
             {
                 firstName = fn;
                 lastName = ln;
@@ -46,34 +64,6 @@ namespace Customer_Database
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-                SqlConnection connection = new SqlConnection(connectionString);
-
-                connection.Open();
-
-                using (SqlCommand cmd = new SqlCommand("INSERT INTO Customers (firstName,lastName,address,city, state,zip,email,phone) VALUES (@first,@last,@address,@city,@state,@zip,@email,@phone)"))
-                {
-                    cmd.CommandType = CommandType.Text;
-                    cmd.Connection = connection;
-                    cmd.Parameters.AddWithValue("@first", firstNameBox.Text);
-                    cmd.Parameters.AddWithValue("@last", lastNameBox.Text);
-                    cmd.Parameters.AddWithValue("@address", address1Box.Text);
-                    cmd.Parameters.AddWithValue("@city", cityBox.Text);
-                    cmd.Parameters.AddWithValue("@state", stateSelectBox.Text);
-                    cmd.Parameters.AddWithValue("@zip", zipCodeBox.Text);
-                    cmd.Parameters.AddWithValue("@email", emailTextbox.Text);
-                    cmd.Parameters.AddWithValue("@phone", phoneTextbox.Text);
-
-
-                    cmd.ExecuteNonQuery();
-                    MessageBox.Show("Customer Added!");
-                    connection.Close();
-                    clearAllText();
-                }
-            
-
-        }
         private void clearAllText()
         {
             firstNameBox.Clear();
@@ -86,53 +76,113 @@ namespace Customer_Database
             phoneTextbox.Clear();
         }
 
-
-        private void button2_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             //set focus to tab with data from database
             this.MainDisplay.SelectedTab = lookupTab;
 
-            SqlConnection connection = new SqlConnection(connectionString);
-            connection.Open();
+            searchDataTable.Clear();
 
-            //select all from any row, in any column, that matches the search term
-            SqlCommand cmd = new SqlCommand
-                ("SELECT * FROM Customers WHERE firstname = @searchTerm" +
-                " OR lastName = @searchTerm" +
-                " OR address = @searchTerm" +
-                " OR city = @searchTerm" +
-                " OR state = @searchTerm" +
-                " OR zip = @searchTerm" +
-                " OR email = @searchTerm" + 
-                " OR phone = @searchTerm", connection);
-            cmd.Parameters.AddWithValue("@searchTerm", searchTerm.Text);
-            cmd.Connection = connection;
-            SqlDataReader reader = cmd.ExecuteReader();
 
-            if (reader.HasRows)
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                while (reader.Read())
-                {
-                    //add read items to list of customers
-                    Customer input = new Customer(Convert.ToString(reader.GetValue(0)), 
-                        Convert.ToString(reader.GetValue(1)), 
-                        Convert.ToString(reader.GetValue(7)), 
-                        Convert.ToString(reader.GetValue(2)), 
-                        Convert.ToString(reader.GetValue(3)), 
-                        Convert.ToString(reader.GetValue(4)), 
-                        Convert.ToString(reader.GetValue(5)), 
-                        Convert.ToString(reader.GetValue(6)));
-                    tempCustList.Add(input);
-                    
-                }
+
+                connection.Open();
+
+                //select all from any row, in any column, that matches the search term
+                SqlCommand cmd = new SqlCommand
+                    ("SELECT * FROM Customers WHERE firstname LIKE @searchTerm" +
+                     " OR lastName = @searchTerm" +
+                     " OR address = @searchTerm" +
+                     " OR city = @searchTerm" +
+                     " OR state = @searchTerm" +
+                     " OR zip = @searchTerm" +
+                     " OR email = @searchTerm" +
+                     " OR phone = @searchTerm", connection);
+                cmd.Parameters.AddWithValue("@searchTerm", "%" + searchTerm.Text + "%");
+                cmd.Connection = connection;
+
+                searchDataTable.Load(cmd.ExecuteReader());
+
+                if (searchDataTable.Rows.Count == 0)
+                    MessageBox.Show("No Results Found");
             }
 
-                    
+        }
 
-                
-            
-        }      
 
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            SqlConnection connection = new SqlConnection(connectionString);
+
+            connection.Open();
+
+            using (
+                SqlCommand cmd =
+                    new SqlCommand(
+                        "INSERT INTO Customers (firstName,lastName,address,city, state,zip,email,phone) VALUES (@first,@last,@address,@city,@state,@zip,@email,@phone)")
+                )
+            {
+                cmd.CommandType = CommandType.Text;
+                cmd.Connection = connection;
+                cmd.Parameters.AddWithValue("@first", firstNameBox.Text);
+                cmd.Parameters.AddWithValue("@last", lastNameBox.Text);
+                cmd.Parameters.AddWithValue("@address", address1Box.Text);
+                cmd.Parameters.AddWithValue("@city", cityBox.Text);
+                cmd.Parameters.AddWithValue("@state", stateSelectBox.Text);
+                cmd.Parameters.AddWithValue("@zip", zipCodeBox.Text);
+                cmd.Parameters.AddWithValue("@email", emailTextbox.Text);
+                cmd.Parameters.AddWithValue("@phone", phoneTextbox.Text);
+
+
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Customer Added!");
+                connection.Close();
+                clearAllText();
+            }
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            queryDataTable.Clear();
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+
+                    connection.Open();
+
+                    //select all from any row, in any column, that matches the search term
+                    SqlCommand cmd = new SqlCommand(sqlQueryTextbox.Text, connection);
+                    cmd.Connection = connection;
+
+                    queryDataTable.Load(cmd.ExecuteReader());
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("SQL Query is invalid!");
+            }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox1.SelectedIndex == 1)
+            {
+                topLabel.Show();
+                topText.Show();
+            }
+            else
+            {
+                topLabel.Hide();
+                topText.Hide();
+            }
+        }
     }
 
+
 }
+
+
