@@ -92,13 +92,13 @@ namespace Customer_Database
                 //select all from any row, in any column, that matches the search term
                 SqlCommand cmd = new SqlCommand
                     ("SELECT * FROM Customers WHERE firstname LIKE @searchTerm" +
-                     " OR lastName = @searchTerm" +
-                     " OR address = @searchTerm" +
-                     " OR city = @searchTerm" +
-                     " OR state = @searchTerm" +
-                     " OR zip = @searchTerm" +
-                     " OR email = @searchTerm" +
-                     " OR phone = @searchTerm", connection);
+                     " OR lastName LIKE @searchTerm" +
+                     " OR address LIKE @searchTerm" +
+                     " OR city LIKE @searchTerm" +
+                     " OR state LIKE @searchTerm" +
+                     " OR zip LIKE @searchTerm" +
+                     " OR email LIKE @searchTerm" +
+                     " OR phone LIKE @searchTerm", connection);
                 cmd.Parameters.AddWithValue("@searchTerm", "%" + searchTerm.Text + "%");
                 cmd.Connection = connection;
 
